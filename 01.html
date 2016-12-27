@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue入门-Hello Word！</title>
+    <!--引入vue库-->
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<!--我们有一个需求，一个网页上一个Div标签，我们有一个json对象存储数据，把json对象上的数据放到Div上去。-->
+<div id="app">
+    <!--vue的模板的数据绑定的方法，类似于很多其他前端的模板，可以用两对花括号进行绑定vue中的数据对象的属性-->
+    {{message}}
+</div>
+<script type="text/javascript">
+//创建vue的实例，并把数据绑定到上面创建好的div上去
+    var app = new Vue({//创建vue对象 vue的核心对象
+        el:"#app",    //el属性：把当前vue对象挂载到div标签上，#app是id选择器
+        data:{        //data:vue对象中绑定的数据
+            message:'Hello World!'  //message 自定义数据
+        }
+    });
+</script>
+</body>
+</html>
