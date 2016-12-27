@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定数据中使用Javascript表达式</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{msg + '-'+name}}
+    <p>
+        {{isOk? '123':'456'}}
+    </p>
+    <p>我的年龄是：{{age *2}}</p>
+</div>
+<script type="text/javascript">
+    var app = new Vue({
+        el:"#app",
+        data:{
+            msg:'Hi',
+            name:'Mary',
+            isOk:true,
+            age:16
+        }
+    })
+</script>
+</body>
+</html>
