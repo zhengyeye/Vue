@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输出纯HTML</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-bind:id="MenuContaineId" v-html="MenuBody">
+    </div>
+</div>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{  //data:是vue对象中绑定的数据
+            MenuContaineId:'menu',
+            MenuBody:'<p>这里是菜单的内容</p>'
+        }
+    });
+</script>
+</body>
+</html>
