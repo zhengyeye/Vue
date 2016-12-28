@@ -20,6 +20,15 @@
             <a href="#" v-bind:class="MenuClass">关于</a>
         </div>
     </div>
+
+<!--属性绑定简写-->
+<!--v-bind书写起来很繁琐，vue提供去掉v-bind直接使用:即可-->
+<!--例如：-->
+<!--<div :id="MenuContaineId">-->
+    <!--等价于-->
+<!--<div  v-bind="MenuContaineId">-->
+
+<div></div>
     <script type="text/javascript">
         var app = ({
             el:'#app',
