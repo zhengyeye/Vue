@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue数据绑定——属性绑定</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<!--绑定的语法规则-->
+<!--<标签 v-bind:属性名="要绑定的vue对象的data里的属性名"></标签>-->
+<!--例如：-->
+<!--<span v-bind:id="menuId">{{menuName}}</span>-->
+
+
+    <div id="app">
+        <div v-bind:id="MenuContaineId">
+            <a href="#" v-bind:class="MenuClass">首页</a>
+            <a href="#" v-bind:class="MenuClass">产品</a>
+            <a href="#" v-bind:class="MenuClass">服务</a>
+            <a href="#" v-bind:class="MenuClass">关于</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var app = ({
+            el:'#app',
+            data: {
+                MenuClass :'top-menu',
+                MenuContainedId:'sitemenu'
+            }
+        })
+    </script>
+</body>
+</html>
